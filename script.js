@@ -306,6 +306,16 @@ const quizData = [
     }
 ];
 
+// ==============================================================================
+// إضافة جديدة: خلط الأسئلة عشوائياً وإعادة ترقيمها في كل مرة يتم فتح أو تحديث الموقع
+quizData.sort(() => Math.random() - 0.5);
+
+quizData.forEach((item, index) => {
+    // هذه الدالة تزيل الرقم القديم وتضع الرقم الجديد مرتباً من 1 إلى 60
+    item.q = (index + 1) + ". " + item.q.replace(/^\d+\.\s*/, '');
+});
+// ==============================================================================
+
 const quizContainer = document.getElementById("quiz-container");
 const scoreDisplay = document.getElementById("score-display");
 const progressText = document.getElementById("progress-text");
