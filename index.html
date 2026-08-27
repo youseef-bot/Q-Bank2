@@ -1,48 +1,870 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Q Pro - منصة الاختبارات الاحترافية</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <title>Yousef's Roadmap to Junior Backend</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav class="top-nav">
-        <div class="nav-content">
-            <div class="brand">
-                <span class="icon">⚡</span> Bank <span class="highlight">Q</span> <span class="badge">PRO</span>
-            </div>
-            <div class="stats">
-                <div class="stat-box">
-                    <span class="stat-label">النقاط:</span>
-                    <span class="stat-value" id="score-display">0</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-label">التقدم:</span>
-                    <span class="stat-value" id="progress-text">0 / 60</span>
-                </div>
-            </div>
-        </div>
-        <div class="progress-container">
-            <div class="progress-bar" id="progress-bar"></div>
-        </div>
-    </nav>
+    <!-- ================= NAVBAR ================= -->
 
-    <main class="quiz-wrapper">
-        <div class="intro-header">
-            <h1>اختبر مهاراتك في HTML & CSS</h1>
-            <p>اختر الإجابة الصحيحة واكتشف الشرح المفصل لتطوير مستواك البرمجي.</p>
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+
+                <div class="logo-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>
+                    Yousef <strong>Roadmap</strong>
+                </span>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#about">About</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#summary">Summary</a>
+
+            </nav>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
         </div>
-        
-        <div id="quiz-container"></div>
-        
-        <div class="completion-message" id="completion-message">
-            🎉 رائع! لقد أتممت جميع الأسئلة. راجع أخطائك في الأعلى للتعلم منها.
-        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="roadmap-badge">
+                    ◈ ROADMAP
+                </div>
+
+                <h1>
+                    Your journey to
+                    <span>Junior Backend</span>
+                    mastery
+                </h1>
+
+                <p>
+                    Follow this structured, phase-by-phase path to become
+                    a job-ready <strong>.NET backend engineer</strong>,
+                    from writing your first lines of code to building
+                    production-ready services.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ROADMAP ================= -->
+
+        <section class="roadmap-section" id="roadmap">
+
+            <div class="container">
+
+                <div class="timeline">
+
+
+                    <!-- ================= PHASE A ================= -->
+
+                    <article class="phase">
+
+                        <div class="phase-number">
+                            A
+                        </div>
+
+                        <div class="phase-content">
+
+                            <div class="phase-title">
+
+                                <span>PHASE A</span>
+
+                                <h2>
+                                    Programming Foundations
+                                </h2>
+
+                                <p>
+                                    Now → Start of Year 3
+                                    · <strong>60–70 hours</strong>
+                                </p>
+
+                            </div>
+
+
+                            <div class="cards">
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        C# Foundations
+                                    </h3>
+
+                                    <ul>
+                                        <li>C# from zero practically</li>
+                                        <li>Variables</li>
+                                        <li>Control flow</li>
+                                        <li>Collections</li>
+                                        <li>Methods</li>
+                                        <li>Working with files & directories</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Object-Oriented Programming
+                                    </h3>
+
+                                    <ul>
+                                        <li>Encapsulation</li>
+                                        <li>Inheritance</li>
+                                        <li>Abstraction</li>
+                                        <li>Polymorphism</li>
+                                        <li>Small projects for each principle</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card reading-card">
+
+                                    <h3>
+                                        Reading List
+                                    </h3>
+
+                                    <ul class="reading-list">
+
+                                        <li>
+                                            Computer Hardware Architecture
+                                        </li>
+
+                                        <li>
+                                            How Memory Works
+                                        </li>
+
+                                        <li>
+                                            How CPU Works
+                                        </li>
+
+                                        <li>
+                                            Operating System Architecture
+                                        </li>
+
+                                        <li>
+                                            How Operating Systems Manage Processes
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Developer Tools
+                                    </h3>
+
+                                    <ul>
+                                        <li>Git & GitHub from scratch</li>
+                                        <li>Unit testing basics</li>
+                                        <li>Build for different operating systems</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Practice Projects
+                                    </h3>
+
+                                    <ul>
+                                        <li>Class hierarchy for geometric shapes</li>
+                                        <li>Simple file-based applications</li>
+                                        <li>C# programming exercises</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= PHASE B ================= -->
+
+                    <article class="phase">
+
+                        <div class="phase-number">
+                            B
+                        </div>
+
+                        <div class="phase-content">
+
+                            <div class="phase-title">
+
+                                <span>PHASE B</span>
+
+                                <h2>
+                                    Core Backend & Data Structures
+                                </h2>
+
+                                <p>
+                                    During Year 3
+                                    · <strong>130–150 hours</strong>
+                                </p>
+
+                            </div>
+
+
+                            <div class="cards">
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Data Structures & Algorithms
+                                    </h3>
+
+                                    <ul>
+                                        <li>Arrays</li>
+                                        <li>Linked Lists</li>
+                                        <li>Stacks</li>
+                                        <li>Queues</li>
+                                        <li>Hash Tables</li>
+                                        <li>Trees</li>
+                                        <li>Big-O fundamentals</li>
+                                        <li>LeetCode with C# — 2 problems/week</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Networking
+                                    </h3>
+
+                                    <ul>
+                                        <li>HTTP / HTTPS</li>
+                                        <li>Headers</li>
+                                        <li>Status Codes</li>
+                                        <li>HTTP Methods</li>
+                                        <li>TCP/IP fundamentals</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        ASP.NET Core
+                                    </h3>
+
+                                    <ul>
+                                        <li>Build your first REST API</li>
+                                        <li>Controllers</li>
+                                        <li>Routing</li>
+                                        <li>Dependency Injection</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= PHASE C ================= -->
+
+                    <article class="phase">
+
+                        <div class="phase-number">
+                            C
+                        </div>
+
+                        <div class="phase-content">
+
+                            <div class="phase-title">
+
+                                <span>PHASE C</span>
+
+                                <h2>
+                                    Real Backend Engineering
+                                </h2>
+
+                                <p>
+                                    Summer after Year 3
+                                    · <strong>150–180 hours</strong>
+                                </p>
+
+                            </div>
+
+
+                            <div class="cards">
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        ASP.NET Core Advanced
+                                    </h3>
+
+                                    <ul>
+                                        <li>Middleware</li>
+                                        <li>Model Validation</li>
+                                        <li>Swagger / OpenAPI</li>
+                                        <li>Error Handling</li>
+                                        <li>Logging</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Entity Framework Core
+                                    </h3>
+
+                                    <ul>
+                                        <li>Code First</li>
+                                        <li>Migrations</li>
+                                        <li>LINQ</li>
+                                        <li>Relationships</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        SOLID & Design Patterns
+                                    </h3>
+
+                                    <ul>
+                                        <li>SOLID principles</li>
+                                        <li>Repository Pattern</li>
+                                        <li>Factory Pattern</li>
+                                        <li>Singleton Pattern</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card project-card">
+
+                                    <span class="project-label">
+                                        PROJECT 01
+                                    </span>
+
+                                    <h3>
+                                        Task Manager API
+                                    </h3>
+
+                                    <p>
+                                        Build a complete backend API with
+                                        CRUD operations and simple authentication.
+                                    </p>
+
+                                    <div class="tags">
+                                        <span>REST API</span>
+                                        <span>CRUD</span>
+                                        <span>AUTH</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= PHASE D ================= -->
+
+                    <article class="phase">
+
+                        <div class="phase-number">
+                            D
+                        </div>
+
+                        <div class="phase-content">
+
+                            <div class="phase-title">
+
+                                <span>PHASE D</span>
+
+                                <h2>
+                                    Production Skills & Security
+                                </h2>
+
+                                <p>
+                                    During Year 4
+                                    · <strong>120–150 hours</strong>
+                                </p>
+
+                            </div>
+
+
+                            <div class="cards">
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Authentication & Authorization
+                                    </h3>
+
+                                    <ul>
+                                        <li>JWT Authentication</li>
+                                        <li>ASP.NET Core Identity</li>
+                                        <li>Authorization Roles</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Testing
+                                    </h3>
+
+                                    <ul>
+                                        <li>xUnit</li>
+                                        <li>Moq</li>
+                                        <li>Practical unit testing</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Docker
+                                    </h3>
+
+                                    <ul>
+                                        <li>Containerize your backend</li>
+                                        <li>Docker Images</li>
+                                        <li>Docker Containers</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card highlight-card">
+
+                                    <h3>
+                                        Graduation Project Strategy
+                                    </h3>
+
+                                    <p>
+                                        If possible, build your graduation
+                                        project using <strong>ASP.NET Core</strong>.
+                                        This lets one project support both
+                                        your degree and your backend portfolio.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= PHASE E ================= -->
+
+                    <article class="phase">
+
+                        <div class="phase-number">
+                            E
+                        </div>
+
+                        <div class="phase-content">
+
+                            <div class="phase-title">
+
+                                <span>PHASE E</span>
+
+                                <h2>
+                                    Cloud, Architecture & Deployment
+                                </h2>
+
+                                <p>
+                                    Summer after Year 4
+                                    · <strong>150–180 hours</strong>
+                                </p>
+
+                            </div>
+
+
+                            <div class="cards">
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Architecture
+                                    </h3>
+
+                                    <ul>
+                                        <li>Clean Architecture</li>
+                                        <li>Advanced Layered Architecture</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Cloud
+                                    </h3>
+
+                                    <ul>
+                                        <li>Azure App Service</li>
+                                        <li>Azure SQL basics</li>
+                                        <li>AWS alternative</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        CI/CD
+                                    </h3>
+
+                                    <ul>
+                                        <li>GitHub Actions</li>
+                                        <li>Automated builds</li>
+                                        <li>Deployment basics</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card project-card">
+
+                                    <span class="project-label">
+                                        PROJECT 02 / 03
+                                    </span>
+
+                                    <h3>
+                                        Advanced Backend Project
+                                    </h3>
+
+                                    <p>
+                                        Build an E-commerce API or another
+                                        complex backend with multiple roles,
+                                        relationships and real deployment.
+                                    </p>
+
+                                    <div class="tags">
+                                        <span>CLOUD</span>
+                                        <span>CI/CD</span>
+                                        <span>LIVE</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= PHASE F ================= -->
+
+                    <article class="phase">
+
+                        <div class="phase-number">
+                            F
+                        </div>
+
+                        <div class="phase-content">
+
+                            <div class="phase-title">
+
+                                <span>PHASE F</span>
+
+                                <h2>
+                                    Job Readiness
+                                </h2>
+
+                                <p>
+                                    Final year before travel
+                                    · <strong>60–80 hours + applications</strong>
+                                </p>
+
+                            </div>
+
+
+                            <div class="cards">
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Professional Profile
+                                    </h3>
+
+                                    <ul>
+                                        <li>English CV built around projects</li>
+                                        <li>Clean GitHub profile</li>
+                                        <li>Strong LinkedIn profile</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Interview Preparation
+                                    </h3>
+
+                                    <ul>
+                                        <li>OOP questions</li>
+                                        <li>SQL questions</li>
+                                        <li>Data Structures & Algorithms</li>
+                                        <li>.NET-specific questions</li>
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card">
+
+                                    <h3>
+                                        <i></i>
+                                        Poland Job Market
+                                    </h3>
+
+                                    <ul>
+                                        <li>Research current backend roles</li>
+                                        <li>NoFluffJobs</li>
+                                        <li>Just Join IT</li>
+                                        <li>Verify visa & work rules before travel</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUMMARY ================= -->
+
+        <section class="summary-section" id="summary">
+
+            <div class="container">
+
+                <div class="summary-header">
+
+                    <span>
+                        THE BIG PICTURE
+                    </span>
+
+                    <h2>
+                        Roadmap Summary
+                    </h2>
+
+                    <p>
+                        Approximately
+                        <strong>670–810 hours</strong>
+                        across ~3 years.
+                    </p>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Phase</th>
+                                <th>Timing</th>
+                                <th>Estimated Hours</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>A</td>
+                                <td>Current Summer</td>
+                                <td>60–70</td>
+                            </tr>
+
+                            <tr>
+                                <td>B</td>
+                                <td>Year 3</td>
+                                <td>130–150</td>
+                            </tr>
+
+                            <tr>
+                                <td>C</td>
+                                <td>Summer after Year 3</td>
+                                <td>150–180</td>
+                            </tr>
+
+                            <tr>
+                                <td>D</td>
+                                <td>Year 4</td>
+                                <td>120–150</td>
+                            </tr>
+
+                            <tr>
+                                <td>E</td>
+                                <td>Summer after Year 4</td>
+                                <td>150–180</td>
+                            </tr>
+
+                            <tr>
+                                <td>F</td>
+                                <td>Final year before travel</td>
+                                <td>60–80</td>
+                            </tr>
+
+                            <tr class="total-row">
+                                <td colspan="2">
+                                    TOTAL
+                                </td>
+
+                                <td>
+                                    ~670–810
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="final-note">
+
+                    <span>◆</span>
+
+                    <p>
+                        <strong>The key:</strong>
+                        use your university courses as part of the roadmap
+                        instead of studying the same material twice.
+                        The long timeline gives you room to build deeper
+                        projects and actually understand the stack.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <script src="script.js"></script>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <span>
+                Yousef's Roadmap to Junior Backend
+            </span>
+
+            <span>
+                HTML · CSS · JavaScript
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
 </body>
 </html>
